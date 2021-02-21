@@ -1,0 +1,9 @@
+export const LOADING_FEATURED = "LOADING_FEATURED";
+export const ADD_FEATURED = "ADD_FEATURED";
+export const FEATURED_FAILED = "FEATURED_FAILED";
+
+export const LOADING_RESULT = "LOADING_RESULT";
+export const ADD_RESULT = "ADD_RESULT";
+export const RESULT_FAILED = "RESULT_FAILED";
+export const CLEAR_RESULTS = "CLEAR_RESULTS";
+export const EMPTY_RESULT = "EMPTY_RESULT";
