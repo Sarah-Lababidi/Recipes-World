@@ -15,12 +15,12 @@ function Services() {
                     </div>
                 </div>
                 <div className="col-12 col-md-6 fadeIn">
-                    <img src="assets/images/fridge.jpg" alt="fridge"/>
+                    <img src={require("../assets/images/Fridge.jpg")} alt="fridge"/>
                 </div>
             </div>
             <div className="row align-items-center my-5">
                 <div className="col-12 col-md-6 order-last order-md-first  fadeIn">
-                    <img src="assets/images/diet.jpg" alt="diet"/>
+                    <img src={require("../assets/images/Diet.jpg")} alt="diet"/>
                 </div>
                 <div className="col-12 col-md-6">
                     <div className="row">
@@ -39,7 +39,7 @@ function Services() {
                     </div>
                 </div>
                 <div className="col-12 col-md-6  fadeIn">
-                    <img src="assets/images/noodles.jpg" alt="noodles"/>
+                    <img src={require("../assets/images/Noodles.jpg")} alt="noodles"/>
                 </div>
             </div>
             <div className="row justify-content-center">

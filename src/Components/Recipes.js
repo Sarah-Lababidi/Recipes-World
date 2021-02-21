@@ -77,7 +77,7 @@ function Recipes(props) {
     return (
         <React.Fragment>
         <div className="clock-div position-relative fadeIn">
-            <img id="clock" src="/assets/images/clock.jpg" alt="clock"/>
+            <img id="clock" src={require("../assets/images/Clock.jpg")} alt="clock"/>
             <div className="overlay"></div>
             <div className="text text-center my-5">
                     <p>You are only few steps away from getting your recipe ...</p>

@@ -8,21 +8,21 @@ function Home(props) {
 
     const items = [
         {
-          src: 'assets/images/feast.png',
+          src: "../assets/images/Feast.png",
           altText: 'Welcome',
           caption: "This is the place where you'll get the best recipes in the world!",
           header: 'Welcome to RecipesWorld!',
           key: '1'
         },
         {
-          src: 'assets/images/waffles.png',
+          src: "../assets/images/Waffles.png",
           altText: 'Variety of cuisines',
           caption: "Explore classic recipes from around the world and try new cuisines",
           header: 'Variety of Cuisines',
           key: '2'
         },
         {
-          src: 'assets/images/healthy.png',
+          src: "../assets/images/Healthy.png",
           altText: 'Different Diets',
           caption: "Pick recipes that are compatible with your diet",
           header: 'Different Diets',
@@ -32,6 +32,11 @@ function Home(props) {
 
     const [activeIndex, setActiveIndex] = useState(0);
     const [animating, setAnimating] = useState(false);
+    const [imgSources, setImgSources] = useState([
+      require("../assets/images/Feast.png"),
+      require("../assets/images/Waffles.png"),
+      require("../assets/images/Healthy.png")
+    ])
   
     const next = () => {
       if (animating) return;
@@ -50,7 +55,7 @@ function Home(props) {
       setActiveIndex(newIndex);
     }
   
-    const slides = items.map((item) => {
+    const slides = items.map((item, index) => {
       return (
         <CarouselItem
           className="custom-tag"
@@ -58,7 +63,7 @@ function Home(props) {
           onExited={() => setAnimating(false)}
           key={item.src}
         >
-          <img src={item.src} alt={item.altText} />
+          <img src={imgSources[index]} alt={item.altText} />
           <div className="overlay"></div>
           <CarouselCaption captionText={item.caption} captionHeader={item.header} />
         </CarouselItem>

@@ -19,7 +19,7 @@ function About() {
                     </p>
                 </div>
                 <div className="col-12 col-md-6 slideInRight">
-                    <img src="assets/images/cooking.png" alt="cooking at home"/>
+                    <img src={require("../assets/images/Cooking.png")} alt="cooking at home"/>
                 </div>
             </div>
             <div className="row my-3 my-md-5">
@@ -31,7 +31,7 @@ function About() {
             </div>
             <div className="row align-items-center my-5">
                 <div className="col-12 col-md-6 order-last order-md-first">
-                    <img src="assets/images/healthy-food.jpg" alt="healthy-food"/>
+                    <img src={require("../assets/images/Healthyfood.jpg")} alt="healthy-food"/>
                 </div>
                 <div className="col-12 col-md-6">
                     <div className="row">
@@ -53,12 +53,12 @@ function About() {
                     </div>
                 </div>
                 <div className="col-12 col-md-6">
-                    <img src="assets/images/meal-size.jpg" alt="healthy-food"/>
+                    <img src={require("../assets/images/Mealsize.jpg")} alt="meal size"/>
                 </div>
             </div>
             <div className="row align-items-center my-5">
                 <div className="col-12 col-md-6 order-last order-md-first">
-                    <img src="assets/images/family.jpg" alt="family-cooking"/>
+                    <img src={require("../assets/images/Family.jpg")} alt="family-cooking"/>
                 </div>
                 <div className="col-12 col-md-6">
                     <div className="row">
