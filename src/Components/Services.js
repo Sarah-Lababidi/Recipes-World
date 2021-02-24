@@ -1,11 +1,14 @@
 import React from 'react';
 import { Button } from 'reactstrap';
 import { Link } from 'react-router-dom';
+import Fridge from "../assets/images/Fridge.jpg";
+import Diet from "../assets/images/Diet.jpg";
+import Noodles from "../assets/images/Noodles.jpg";
 
 function Services() {
     return (
         <div className="container services">
-            <h1 className="title text-center my-5"><span>Our Services</span></h1>
+            <h2 className="title text-center my-5"><span>Our Services</span></h2>
             <div className="row align-items-center my-5">
                 <div className="col-12 col-md-6">
                     <div className="row">
@@ -14,13 +17,13 @@ function Services() {
                         </div>
                     </div>
                 </div>
-                <div className="col-12 col-md-6 fadeIn">
-                    <img src={require("../assets/images/Fridge.jpg")} alt="fridge"/>
+                <div className="col-12 col-md-6">
+                    <img src={Fridge} alt="fridge"/>
                 </div>
             </div>
             <div className="row align-items-center my-5">
-                <div className="col-12 col-md-6 order-last order-md-first  fadeIn">
-                    <img src={require("../assets/images/Diet.jpg")} alt="diet"/>
+                <div className="col-12 col-md-6 order-last order-md-first">
+                    <img src={Diet} alt="diet"/>
                 </div>
                 <div className="col-12 col-md-6">
                     <div className="row">
@@ -38,8 +41,8 @@ function Services() {
                         </div>
                     </div>
                 </div>
-                <div className="col-12 col-md-6  fadeIn">
-                    <img src={require("../assets/images/Noodles.jpg")} alt="noodles"/>
+                <div className="col-12 col-md-6">
+                    <img src={Noodles} alt="noodles"/>
                 </div>
             </div>
             <div className="row justify-content-center">

@@ -3,26 +3,29 @@ import Loading from './Loading';
 import { Card, CardImg, CardBody, CardTitle, CardText, CardImgOverlay, Carousel, CarouselItem, CarouselControl,
         CarouselIndicators, CarouselCaption, Button } from 'reactstrap';
 import { Link } from 'react-router-dom';
+import Feast from "../assets/images/Feast.jpg";
+import Waffles from "../assets/images/Waffles.jpg";
+import Healthy from "../assets/images/Healthy.jpg";
 
 function Home(props) {
 
     const items = [
         {
-          src: "../assets/images/Feast.jpg",
+          src: Feast,
           altText: 'Welcome',
           caption: "This is the place where you'll get the best recipes in the world!",
           header: 'Welcome to RecipesWorld!',
           key: '1'
         },
         {
-          src: "../assets/images/Waffles.jpg",
+          src: Waffles,
           altText: 'Variety of cuisines',
           caption: "Explore classic recipes from around the world and try new cuisines",
           header: 'Variety of Cuisines',
           key: '2'
         },
         {
-          src: "../assets/images/Healthy.jpg",
+          src: Healthy,
           altText: 'Different Diets',
           caption: "Pick recipes that are compatible with your diet",
           header: 'Different Diets',
@@ -32,11 +35,6 @@ function Home(props) {
 
     const [activeIndex, setActiveIndex] = useState(0);
     const [animating, setAnimating] = useState(false);
-    const [imgSources, setImgSources] = useState([
-      require("../assets/images/Feast.jpg"),
-      require("../assets/images/Waffles.jpg"),
-      require("../assets/images/Healthy.jpg")
-    ])
   
     const next = () => {
       if (animating) return;
@@ -63,7 +61,7 @@ function Home(props) {
           onExited={() => setAnimating(false)}
           key={item.src}
         >
-          <img src={imgSources[index]} alt={item.altText} />
+          <img src={item.src} alt={item.altText} />
           <div className="overlay"></div>
           <CarouselCaption captionText={item.caption} captionHeader={item.header} />
         </CarouselItem>
@@ -81,7 +79,7 @@ function Home(props) {
     } else {
         if (!props.featuredState.featured || props.featuredState.featured.length === 0) {
                view= <div className="col-12 text-center text-danger">
-                            <h1>Sorry, you have exceeded the number of allowed requests ...</h1>
+                            <h3>Sorry, you have exceeded the number of allowed requests ...</h3>
                     </div>
         } else {
           view = props.featuredState.featured.map(recipe => {
@@ -123,7 +121,7 @@ function Home(props) {
             </Carousel>
             <div className="home-featured mt-3">
                 <div className="container">
-                    <h1 className="title text-center my-4"><span>Our Most Popular Recipes</span></h1>
+                    <h2 className="title text-center my-4 pb-4"><span>Our Most Popular Recipes</span></h2>
                     <div className="row my-5">
                       {view}
                     </div>

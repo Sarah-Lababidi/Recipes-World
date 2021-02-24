@@ -1,6 +1,11 @@
 import React from 'react';
 import { Button } from 'reactstrap';
 import { Link } from 'react-router-dom';
+// importing images manually after updating react scripts
+import Cooking from "../assets/images/Cooking.jpg";
+import Healthyfood from "../assets/images/Healthyfood.jpg";
+import Mealsize from "../assets/images/Mealsize.jpg";
+import Family from "../assets/images/Family.jpg";
 
 function About() {
     return (
@@ -19,7 +24,7 @@ function About() {
                     </p>
                 </div>
                 <div className="col-12 col-md-6 slideInRight">
-                    <img src={require("../assets/images/Cooking.jpg")} alt="cooking at home"/>
+                    <img src={Cooking} alt="cooking at home"/>
                 </div>
             </div>
             <div className="row my-3 my-md-5">
@@ -31,7 +36,7 @@ function About() {
             </div>
             <div className="row align-items-center my-5">
                 <div className="col-12 col-md-6 order-last order-md-first">
-                    <img src={require("../assets/images/Healthyfood.jpg")} alt="healthy-food"/>
+                    <img src={Healthyfood} alt="healthy-food"/>
                 </div>
                 <div className="col-12 col-md-6">
                     <div className="row">
@@ -53,12 +58,12 @@ function About() {
                     </div>
                 </div>
                 <div className="col-12 col-md-6">
-                    <img src={require("../assets/images/Mealsize.jpg")} alt="meal size"/>
+                    <img src={Mealsize} alt="meal size"/>
                 </div>
             </div>
             <div className="row align-items-center my-5">
                 <div className="col-12 col-md-6 order-last order-md-first">
-                    <img src={require("../assets/images/Family.jpg")} alt="family-cooking"/>
+                    <img src={Family} alt="family-cooking"/>
                 </div>
                 <div className="col-12 col-md-6">
                     <div className="row">

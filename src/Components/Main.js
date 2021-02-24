@@ -10,6 +10,7 @@ import  RecipeDetail from './RecipeDetail'
 import { connect } from 'react-redux';
 import { fetchFeatured, fetchResults, clearResults } from '../redux/ActionCreators';
 
+
 const mapStateToProps = state => {
     return {
         featuredState: state.featuredState,
@@ -23,7 +24,7 @@ const mapDispatchToProps = dispatch => ({
 })
 class Main extends Component {
     componentDidMount() {
-        this.props.fetchFeatured();
+        // this.props.fetchFeatured();
     }
     render() {
         const RecipeDetailPage = ({ match }) => {
