@@ -19,7 +19,7 @@ function About() {
                     </p>
                 </div>
                 <div className="col-12 col-md-6 slideInRight">
-                    <img src={require("../assets/images/Cooking.png")} alt="cooking at home"/>
+                    <img src={require("../assets/images/Cooking.jpg")} alt="cooking at home"/>
                 </div>
             </div>
             <div className="row my-3 my-md-5">

@@ -8,21 +8,21 @@ function Home(props) {
 
     const items = [
         {
-          src: "../assets/images/Feast.png",
+          src: "../assets/images/Feast.jpg",
           altText: 'Welcome',
           caption: "This is the place where you'll get the best recipes in the world!",
           header: 'Welcome to RecipesWorld!',
           key: '1'
         },
         {
-          src: "../assets/images/Waffles.png",
+          src: "../assets/images/Waffles.jpg",
           altText: 'Variety of cuisines',
           caption: "Explore classic recipes from around the world and try new cuisines",
           header: 'Variety of Cuisines',
           key: '2'
         },
         {
-          src: "../assets/images/Healthy.png",
+          src: "../assets/images/Healthy.jpg",
           altText: 'Different Diets',
           caption: "Pick recipes that are compatible with your diet",
           header: 'Different Diets',
@@ -33,9 +33,9 @@ function Home(props) {
     const [activeIndex, setActiveIndex] = useState(0);
     const [animating, setAnimating] = useState(false);
     const [imgSources, setImgSources] = useState([
-      require("../assets/images/Feast.png"),
-      require("../assets/images/Waffles.png"),
-      require("../assets/images/Healthy.png")
+      require("../assets/images/Feast.jpg"),
+      require("../assets/images/Waffles.jpg"),
+      require("../assets/images/Healthy.jpg")
     ])
   
     const next = () => {
