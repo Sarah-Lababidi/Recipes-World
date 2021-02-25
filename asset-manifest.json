@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/Recipes-World/static/css/main.dc2bc996.chunk.css",
-    "main.js": "/Recipes-World/static/js/main.d201d38a.chunk.js",
-    "main.js.map": "/Recipes-World/static/js/main.d201d38a.chunk.js.map",
+    "main.js": "/Recipes-World/static/js/main.cc1eb459.chunk.js",
+    "main.js.map": "/Recipes-World/static/js/main.cc1eb459.chunk.js.map",
     "runtime-main.js": "/Recipes-World/static/js/runtime-main.e0fea9e5.js",
     "runtime-main.js.map": "/Recipes-World/static/js/runtime-main.e0fea9e5.js.map",
     "static/css/2.8757ddda.chunk.css": "/Recipes-World/static/css/2.8757ddda.chunk.css",
@@ -31,6 +31,6 @@
     "static/css/2.8757ddda.chunk.css",
     "static/js/2.13a590ae.chunk.js",
     "static/css/main.dc2bc996.chunk.css",
-    "static/js/main.d201d38a.chunk.js"
+    "static/js/main.cc1eb459.chunk.js"
   ]
 }
