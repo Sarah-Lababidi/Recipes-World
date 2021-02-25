@@ -24,7 +24,7 @@ const mapDispatchToProps = dispatch => ({
 })
 class Main extends Component {
     componentDidMount() {
-        // this.props.fetchFeatured();
+        this.props.fetchFeatured();
     }
     render() {
         const RecipeDetailPage = ({ match }) => {
